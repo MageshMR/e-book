@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf</title>
+  <link rel="stylesheet" href="ebook.css">
+</head>
+
+<body>
+  <header>
+    <h1>Bookstore</h1>
+    <nav>
+      <ul>  
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" id="booksLink">Books</a></li>
+        <li><a href="#" id="cartLink">Cart</a></li>
+        <li><a href="#" id="favoritesLink">Favorites</a></li>
+        
+      </ul>
+    </nav>
+    <input type="text" id="searchInput" placeholder="Search for a book...">
+        <button id="searchButton">Search</button>
+        <div id="priceFilter">
+          <select id="priceDropdown">
+              <option value="all">All Prices</option>
+              <option value="under500">Under ₹500</option>
+              <option value="above500">Above ₹500</option>
+          </select>
+        </div>
+  </header>
+
+  <main>
+    <div id="bookshelf"></div>
+  </main>
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Book Image" style="width:50%">
+        <div id="modalDetails"></div>
+    </div>
+</div>
+
+
+</div>
+
+
+  <script src="ebook.js"></script>
+</body>
+
+</html>
